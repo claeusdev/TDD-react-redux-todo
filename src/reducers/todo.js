@@ -14,6 +14,7 @@ export const updateCurrent = val => ({
   type: CURRENT_UPDATE,
   payload: val
 });
+
 export default (state = initState, action) => {
   switch (action.type) {
     case TODO_ADD:
