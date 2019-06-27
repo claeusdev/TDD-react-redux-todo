@@ -3,9 +3,10 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import store from "./store";
+import { updateCurrent } from "./reducers/todo";
 
 function todoChangeHandler(val) {
-  return store.dispatch({ type: "CURRENT_UPDATE", payload: val });
+  return store.dispatch(updateCurrent(val));
 }
 
 function render() {
